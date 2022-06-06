@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 
-function Form() {
-  const [firstName, setFirstName] = useState("John");
-  const [lastName, setLastName] = useState("Henry");
-
+function Form({
+  firstName,
+  lastName,
+  handleFirstNameChange,
+  handleLastNameChange
+}) {
   return (
     <form>
       <input type="text" value={firstName} />
